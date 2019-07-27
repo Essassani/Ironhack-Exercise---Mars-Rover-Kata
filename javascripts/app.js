@@ -95,10 +95,10 @@ const command = commandList => {
 const gridBoundary = (rover) => {
     if (rover.y < 0 && rover.direction === 'N') {
     console.log('Grid limit - do not continue North! -- RETURN NOW');
-  } if (rover.y > 9 && rover.direction === 'S') {
-    console.log('Grid limit - do not continue South! -- RETURN NOW');
   } if (rover.x < 0 && rover.direction === 'W') {
     console.log('Grid limit - do not continue West! -- RETURN NOW');
+  } if (rover.y > 9 && rover.direction === 'S') {
+    console.log('Grid limit - do not continue South! -- RETURN NOW');
   } if (rover.x > 9 && rover.direction === 'E') {
     console.log('Grid limit - do not continue East! -- RETURN NOW');
   } 
