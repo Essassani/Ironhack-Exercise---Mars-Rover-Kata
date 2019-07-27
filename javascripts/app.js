@@ -7,7 +7,9 @@ let rover = {
   y: 0,
   travelLog: []
 }
+
 // ======================
+
 function turnLeft(rover){
   console.log("turnLeft was called!");
   switch (rover.direction){
@@ -51,12 +53,12 @@ function moveForward(){
     break; 
   };
   console.log(`Mars Rover is now located in XY ${rover.x},${rover.y} on the grid.`);
-  rover.travelLog.push(rover.x, rover.y);
+  rover.travelLog.push([rover.x, rover.y]);
   gridBoundary(rover);
 };
 
 function moveBackwards(){
-  console.log("moveBackward was called");
+  console.log("moveBackwards was called");
   switch (rover.direction) {
     case 'N': rover.y += 1
     break;
@@ -68,7 +70,7 @@ function moveBackwards(){
     break; 
   };
   console.log(`Mars Rover is now located in XY ${rover.x},${rover.y} on the grid.`);
-  rover.travelLog.push(rover.x, rover.y);
+  rover.travelLog.push([rover.x, rover.y]);
   gridBoundary(rover);
 };
 
@@ -117,8 +119,6 @@ const obstacle = ['X','X','X','X','X','X','X','X','X','X'],
                  ['X','X','X','X','X','X','X','X','X','X']
 */
 
-
-
 command('r')
 command('f')
 command('f')
@@ -130,8 +130,6 @@ command('f')
 command('f')
 command('b')
 
-
-
-
 console.log(rover.direction)
 console.log(rover.x, rover.y);
+console.log(rover.travelLog);
