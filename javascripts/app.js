@@ -121,9 +121,9 @@ const gridObstacle = (rover) => {
   if (rover.x && rover.y == obstacle[0][3]){
     console.log('Bump! Rock Ahead')
   }
-  if (rover.x && rover.y == obstacle[1][7]){
+  if (rover.x && rover.y == obstacle[2][7]){
     console.log('Bump! Rock Ahead')
-  }
+  } 
   if (rover.x && rover.y == obstacle[2][0]){
     console.log('Bump! Rock Ahead')
   
@@ -132,6 +132,12 @@ const gridObstacle = (rover) => {
 */
 
 
+command('r')
+command('b')
+command('f')
+command('f')
+command('f')
+command('f')
 command('r')
 command('f')
 
